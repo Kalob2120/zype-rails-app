@@ -10,7 +10,7 @@ module ApplicationHelper
   def video_overlay(video)
     if video.thumbnails.blank?
       "white"
-    elsif thumbnail = video_thumbnail_url(video, {width:426})
+    elsif thumbnail = video_thumbnail_url(video, {width:1280})
       "url('#{thumbnail}')"
     elsif thumbnail = video_thumbnail_url(video, {width:480})
       "url('#{thumbnail}')"
